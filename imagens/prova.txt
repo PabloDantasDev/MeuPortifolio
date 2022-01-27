@@ -1,0 +1,91 @@
+Pergunta1 Selecione a alternativa que indica corretamente as responsabilidades do HTML, CSS e Javascript
+01HTML: estilização dos elementos. CSS: lógica dos elementos. Javascript: estrutura e elementos da página.
+02 HTML: estilização dos elementos. CSS: estrutura e elementos da página. Javascript: lógica dos elementos.
+03HTML: estrutura e elementos da página. CSS: estilização dos elementos. Javascript: lógica dos elementos.
+04HTML: lógica dos elementos. CSS: estilização dos elementos. Javascript: estrutura e elementos da página.
+05HTML: lógica dos elementos. CSS: estrutura e elementos da página. Javascript: estilização dos elementos.
+
+Pergunta 2 Estão corretas as afirmações:
+
+I. O HTML é uma linguagem de programação.
+
+II. A estrutura de um documento HTML é baseada em tags. Elas são, em geral, representadas pela seguinte sintaxe: ᐸtagᐳᐸ/tagᐳ, sendo ᐸtagᐳ conhecida como a tag de abertura e ᐸ/tagᐳ como tag de fechamento.
+
+III. A tag ᐸlinkᐳ é responsável por criar um link para outro site ou página.Esta pergunta é obrigatória
+I, II e III
+Somente I e II
+Somente I e III
+Somente II
+Somente III
+
+Pergunta 3 Os elementos HTML podem ser divididos entre elementos block ou inline. Considerando essa informação, indique a alternativa que melhor representa o que aconteceria com a tela caso colocássemos, um depois do outro, os seguintes elementos: h1, span, strong, div
+
+01 O  h1 fica na primeira linha. O span e o strong ficam na segunda linha. A div fica na terceira linha.
+02O h1, o span e o strong ficam na primeira linha. A div fica na segunda linha.
+03O h1 fica na primeira linha. O span fica na segunda linha. O strong fica na terceira linha. A div fica na quarta linha.
+04 O h1 fica na primeira linha. O span, o strong e a div ficam na segunda linha.
+05O h1 fica na primeira linha. O span fica na segunda linha. O strong e a div ficam na terceira linha.
+
+Pergunta 4 Suponha um formulário em HTML. Ele possui dois campos e um botão que submete o formulário. O primeiro campo possui o atributo "name" como "email". O segundo possui o atributo "name" como "senha". Se o usuário preencher esse formulário com o email "bob@gmail.com" e a senha "123456" e clicar no botão, qual será o texto adicionado à URL da página?
+
+01 email=${,bob@gmail.com,}&senha=${123456}
+02email=,bob@gmail.com,&senha=123456
+03 {email}=,bob@gmail.com,&{senha}=123456
+04 email={,bob@gmail.com,}&senha={123456}
+05 email=",bob@gmail.com,"&senha="123456"
+
+Pergunta 5 Estão corretas as afirmações:
+
+I. A propriedade background-color é responsável por alterar a cor de fonte do texto.
+
+II. A propriedade display altera o tamanho da tela a ser visualizada.
+
+III. em, pt, px, vh, vw e % são unidades de medida do CSS.Esta pergunta é obrigatória
+I, II e III
+Somente I e II
+Somente I e III
+Somente II
+Somente III
+
+Pergunta 6 Quais comandos aplicados a um container são necessários para centralizar um elemento dentro dele horizontalmente?Esta pergunta é obrigatória
+01display: flex; justify: center;
+02 display: flex; justify-content: center;
+03display: flex; justify-items: center;
+04display: flex; align-content: center;
+05display: flex; align-items: center;
+
+
+Pergunta 7 Em um código CSS, uma media query foi definida com a seguinte condição: (min-width: 600px and max-width: 800px). Assinale a alternativa correta:Esta pergunta é obrigatória
+01 Em uma tela de 700px de largura, todo código declarado dentro da media query terá efeito.
+02 Em uma tela de 700px de largura, todo código declarado fora da media query não terá efeito.
+03 Em uma tela de 900px de largura, todo código declarado dentro da media query terá efeito.
+04 Em uma tela de 600px de largura, todo código declarado dentro da media query terá efeito.
+05 Em uma tela de 900px de largura, todo código declarado fora da media query não terá efeito.
+
+Pergunta 8 Estão corretas as afirmações:
+
+I. Utilizar o let para declarar uma variável em JavaScript não permite que o seu valor seja alterado posteriormente
+
+II. Em JavaScript usamos a estrutura Array para guardar uma lista não ordenada de coisas
+
+III. Para estruturas condicionais em JavaScript com mais de duas possíveis condições, podemos utilizar o else if.Esta pergunta é obrigatória
+I, II e III
+Somente I e II
+Somente I e III
+Somente II
+Somente III
+ 
+
+Pergunta 9 Para associar uma função Javascript chamada "click" ao clique de um botão no HTML, é necessário adicionar o seguinte atributo ao elemento "button" que representa o botão:Esta pergunta é obrigatória
+01 onclick="click()"
+02 onclick="function click()"
+03 onclick="{click()}"
+04 onclick="click"
+05 onclick="function click"
+
+Pergunta 10 Considerando um for loop com a seguinte declaração: for(let i = 1; i <= 10; i += 2), indique quantas vezes o loop irá rodar:Esta pergunta é obrigatória
+5
+4
+6
+8
+10
