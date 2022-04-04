@@ -14,12 +14,13 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #d1cfd4;
+    background: #16061d;
+    
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--text-color-h1-h2);
+    background: #0c83f1;
     border-radius: 5px;
   }
   
@@ -36,7 +37,7 @@
 
 
         /*------VARIAVEIS  CORES--------*/
-        --bg-color: #d1cfd4;
+        --bg-color: #16061d;
         --text-color-h1-h2: #3074a1;
         --text-color-p: #3438a0;
         /*----END--VARIAVEIS  CORESS----*/
@@ -54,12 +55,10 @@
         background-color: var(--bg-color);
         overflow-x: hidden; 
     }
-    h1,h3,p{
-        text-align: center;
-    }
+ 
     
     a {
-        color: #0c141a;
+        color: #ffffff;
         text-decoration: none;
     }
     
@@ -91,7 +90,7 @@
 #header .nav-bar{
   position: fixed;
    background-color:var(--bg-color);
-   border-bottom: 1px solid rgb(133, 114, 151);
+   border-bottom: 1px solid rgb(255, 255, 255);
    width: 100%;
    z-index: 2;
    
@@ -105,20 +104,27 @@
     margin-top: 10px;
     margin-right: 30px;
     font-weight: bold;
+    ;
    
     
  }
  #header .nav-bar ul a {
-   color: var(--text-color-p);
+   color: #0c83f1;
+   transition:  0.2s ease-in-out
    
     
  }
+ #header .nav-bar ul a:hover {
+    color: #ffffff;
+    
+     
+  }
 
  @media only screen and (max-width: 768px) {
     #header .nav-bar{
          position: fixed;
          background-color:var(--bg-color);
-         border-bottom: 1px solid rgb(133, 114, 151);
+         border-bottom: 1px solid rgb(0, 0, 0);
          width: 100%;
          z-index: 2;
          
@@ -179,22 +185,33 @@
     
     #hero .container .box-direita img {
         width: 300px;
-        height: 420px;
+        height: 350px;
         border-radius: 8px;
+        animation: float 14s linear infinite;
+    
+    }
+
+    @keyframes float{
+        0%,100%{
+            transform: translateY(0rem);
+        }
+        50%{
+            transform: translateY(-3.5rem) 
+        }
     }
     
     #hero .box-esquerda .subtitulo {
         font-size: 1.8rem;
         font-weight: 600;
-        color: var(--text-color-p);
+        color: white;
         font-family: var(--font-family-second);
         text-align: left;
     }
     
     #hero .box-esquerda .titulo {
         font-size: 3.8rem;
-        font-family: 'GepesteV', var(--font-family-main);
-        font-weight: 900;
+        font-weight: bold;
+        color:#0c83f1 ;
     }
     
     #hero .box-esquerda .buttons {
@@ -203,17 +220,19 @@
         align-items: center;
         justify-content: flex-start;
         background-color: var(--text-color-p);
-        max-width: 130px;
+        max-width: 140px;
         padding: 10px;
         border-radius: 3px;
+       
+        
     }
     
     #hero .box-esquerda .buttons:hover {
-        background-color: rgb(71, 44, 97);
+        background-color: #0c83f1;
     }
     
     #hero .box-esquerda .buttons a {
-        color: var(--bg-color);
+        color: white;
         font-family: var(--font-family-second);
         font-weight: bold;
     }
@@ -239,7 +258,7 @@
             height: 300px;
             object-fit: cover;
             object-position: 50% 30%;
-            margin-top: 20px;
+            margin-top: 5rem;
         }
         #hero .container {
             flex-direction: column-reverse;
@@ -306,23 +325,11 @@
         text-align: center;
         font-size: 3rem;
         position: relative;
+        color: #0c83f1;
+        border-bottom: .1rem solid white;
     }
 
-    #about .subtitulo::before {
-        content: attr(data-outline);
-        font-family: var(--font-family-main);
-        text-align: center;
-        font-size: 3rem;
-        position: absolute;
-        left: 1%;
-        top: -20%;
-        width: 100%;
-        text-align: center;
-        letter-spacing: 0.2rem;
-        color: transparent;
-        -webkit-text-stroke: 1.5px #5a23ed2f;
-        z-index: -1;
-    }
+
     
     #about .wrapper {
         display: flex;
@@ -371,7 +378,7 @@
 #about .direita .texto-direita {
     
     font-family: var(--font-family-second);
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
    
 }
@@ -446,7 +453,7 @@ margin-bottom: 21rem;
     /*--------START STYLE STACK SECTIION-------*/
     
     .container {
-        height: 100vh;
+        height: 160vh;
     }
     
     .container .heading {
@@ -455,27 +462,14 @@ margin-bottom: 21rem;
         font-family: var(--font-family-main);
         font-size: 50px;
         position: relative;
+       
 
-    }  .container .heading::before {
-        content: 'S T A C K';
-        text-align: center;
-        padding-top: 80px;
-        font-family: var(--font-family-main);
-        position: absolute;
-        left: 2%;
-        top: -10px;
-        width: 100%;
-        text-align: center;
-        letter-spacing: 0.1rem;
-        color: transparent;
-        -webkit-text-stroke: 0.2rem #5a23ed2f ;
-        z-index: -1;
-    }
+    }  
 
     .container .box-container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 5px;
     }
     
     .container .box-container .box {
@@ -489,11 +483,12 @@ margin-bottom: 21rem;
     .container .box-container .box img {
         height: 70px;
     }
-    
-    .container .box-container .box h3 {
-        color: #444;
+   
+    .container h3 {
+        color: black;
         font-size: 22px;
         padding: 10px 0;
+        z-index: 1000;
     }
     
     .container .box-container .box:hover {
@@ -512,7 +507,9 @@ margin-bottom: 21rem;
         height: 100vh;
         margin-bottom: 5%;
     }
-    
+    .heading{
+        color: #0c83f1;
+    }
     #stack .container .heading h1 {
         text-align: center;
         padding-bottom: 15px;
@@ -539,7 +536,7 @@ margin-bottom: 21rem;
     }
     
     .container .box-container .box h3 {
-        color: rgb(10, 10, 10);
+        color: rgb(255, 255, 255);
         font-size: 22px;
         padding: 10px 0;
         font-family: var(--font-family-second);
@@ -568,13 +565,14 @@ margin-bottom: 21rem;
 
     /*----------START STYLE PROJETO----------*/
 
-#projeto{
 
+#projeto{
+margin-top: 10rem;
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-margin: 50px 0px;
+margin: .1rem 0px;
 border-bottom: 1px solid black;
 }
 
@@ -589,38 +587,34 @@ border-bottom: 1px solid black;
 .projeto-heading h3{
     font-weight: 600;
     text-transform: uppercase;
-    color:black;
+    color:#0c83f1;
     font-family: var(--font-family-main);
     font-size: 40px;
     position: relative;
    
 }
-.projeto-heading h3::before {
-    content: 'P R J E T O';
-    font-family: var(--font-family-main);
-    text-align: center;
-    font-size: 3rem;
-    position: absolute;
-    left: 1%;
-    top: -25%;
-    width: 100%;
-    text-align: center;
-    letter-spacing: 0.2rem;
-    color: transparent;
-    -webkit-text-stroke: 1.5px #5a23ed2f;
-    z-index: -1;
-}
+
 
 
 .card-projeto{
     background-color: var(--bg-color);
-    box-shadow: 10px 10px 15px rgba(60, 7, 90, 0.4);
+    border: .1rem solid rgba(255, 255, 255, 0.349);
     padding: 15px 15px 40px;
     margin: auto;
     text-align: center;
    
 
 }
+
+.card-projeto h2{
+color: white;
+
+}
+.card-projeto p{
+    color: white;
+    
+    }
+  
 
 .img-card{
     width: 100%;
@@ -639,7 +633,7 @@ border-bottom: 1px solid black;
 }
 
 .card-projeto .card-desc h5{
-    color: rgb(39, 11, 77);
+    color: rgb(255, 255, 255);
 }
 
 .card-projeto .card-desc .stk{
@@ -706,7 +700,7 @@ font-weight: bold;
       justify-content: center;
     
     }
-
+ 
     .card-projeto .card-desc .btn .btn-site{
       
       width: 50%;
@@ -738,39 +732,56 @@ font-weight: bold;
 
 
 
-#home{
-  
-    height: 100%;
+#contato{
+    height: 20vh;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
 }
 
-.home .share{
-    position: relative;
-    border-radius: .5rem;
-    box-shadow: var(--text-color-h1-h2);
-    display: block;
-    display: flex;
-    justify-content: center;
+#contato h2{
+    color: white;
+}
+
+#contato p{
+    color: #0c83f1;
+}
+#contato .share a{
+   margin: 20px;
+}
+
+#contato .share .fa-linkedin {
+    
+    color:#0c83f1;
+  
     
 }
-.home .share a{
+
+
+#contato .share .fa-github{
+    color:#05dfd4;
   
-    width: 1rem;
-    line-height: 2rem;
-    box-shadow: var(--box-shadow);
-    margin:30px;
-    font-size: 2.5rem;
-    color: var(--text-color-p);
-    border-radius: .5rem;
-   
-   
+    
 }
 
-.home .share a:hover{
-
-    color:var(--text-color-h1-h2);
+#contato .share .fa-github{
+    color:#5355ec;
+  
+    
+}#contato .share .fa-whatsapp{
+    color:#13ff61;
+  
+    
 }
-#home .desenvolvido{
-
-   padding: 5px;
+.contato .container-contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
+
+
    /*---END STYLE CONTATO-------*/
