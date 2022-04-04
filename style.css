@@ -90,9 +90,10 @@
 #header .nav-bar{
   position: fixed;
    background-color:var(--bg-color);
-   border-bottom: 1px solid rgb(255, 255, 255);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.253);
    width: 100%;
    z-index: 2;
+   opacity: 0.9;
    
 }
 #header .nav-bar ul {
@@ -127,6 +128,7 @@
          border-bottom: 1px solid rgb(0, 0, 0);
          width: 100%;
          z-index: 2;
+         border-bottom: 1px solid white;
          
       }
       #header .nav-bar ul {
@@ -398,7 +400,7 @@
 @media only screen and (max-width:868px){
 
 #about{
-margin-top: -9rem;
+margin-top: -4rem;
 margin-bottom: 21rem;
 }
 
@@ -656,6 +658,7 @@ color: white;
 
 .card-projeto .card-desc .btn{
     margin-top: 20px;
+   
     
     
 }
@@ -664,6 +667,8 @@ color: white;
 background-color: var(--text-color-p);
 margin-left: 5px;
 padding: 5px;
+padding: 0 3rem;
+
 
 border-radius: 5px;
 color: #d1cfd4;
@@ -686,6 +691,11 @@ font-weight: bold;
         font-size: 35px;
         text-align: center;
         margin-top: 85rem;
+    }
+    .card-projeto .card-desc .stk img{
+        height: 35px;
+        margin-right: 20px;
+        
     }
 
     .container-card {
