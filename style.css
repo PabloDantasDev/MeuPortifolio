@@ -628,7 +628,7 @@ color: white;
     padding: 20px;
     max-width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     grid-gap: 40px;
     justify-content: center;
 
