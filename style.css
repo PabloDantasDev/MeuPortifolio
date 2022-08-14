@@ -601,12 +601,13 @@ border-bottom: 1px solid black;
 .card-projeto{
     background-color: var(--bg-color);
     border: .1rem solid rgba(255, 255, 255, 0.349);
-    padding: 15px 15px 40px;
+    padding: 40px ;
     margin: auto;
     text-align: center;
    
 
 }
+
 
 .card-projeto h2{
 color: white;
